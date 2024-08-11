@@ -5,7 +5,7 @@ public class Pipes : MonoBehaviour
     public Transform top;
     public Transform bottom;
     public float speed = 5f;
-    public float gap = 3f;
+    public float gap;
 
     private float leftEdge;
 

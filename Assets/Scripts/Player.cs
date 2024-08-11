@@ -63,6 +63,7 @@ public class Player : MonoBehaviour
         if (other.gameObject.CompareTag("Obstacle")) {
             GameManager.Instance.GameOver();
         } else if (other.gameObject.CompareTag("Scoring")) {
+            other.GetComponent<BoxCollider2D>().enabled = false;
             GameManager.Instance.IncreaseScore();
         }
     }
